@@ -1,0 +1,242 @@
+﻿
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="LSR_NEW.master.cs" Inherits="LSR_NEW" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>LSR</title>
+
+    <script type = "text/javascript" src = "LSR_master_js/jquery-2.0.2.js"></script>
+  
+
+    <script type="text/javascript">
+
+        function slideSwitch() {
+            var $active = $('#slideshow IMG.active');
+
+            if ($active.length == 0) $active = $('#slideshow IMG:last');
+
+            // use this to pull the images in the order they appear in the markup
+            var $next = $active.next().length ? $active.next()
+        : $('#slideshow IMG:first');
+
+            // uncomment the 3 lines below to pull the images in random order
+
+            // var $sibs  = $active.siblings();
+            // var rndNum = Math.floor(Math.random() * $sibs.length );
+            // var $next  = $( $sibs[ rndNum ] );
+
+
+            $active.addClass('last-active');
+
+            $next.css({ opacity: 0.0 })
+        .addClass('active')
+        .animate({ opacity: 1.0 }, 1000, function () {
+            $active.removeClass('active last-active');
+        });
+        }
+
+        $(function () {
+            setInterval("slideSwitch()", 5000);
+        });
+
+
+</script>
+
+<style type="text/css">
+
+/*** set the width and height to match your images **/
+
+#slideshow {
+    position:relative;
+    height:350px;
+}
+
+#slideshow IMG {
+    position:absolute;
+    top:2px;
+    left:2px;
+    z-index:8;
+    opacity:0.0;
+}
+
+#slideshow IMG.active {
+    z-index:10;
+    opacity:1.0;
+}
+
+#slideshow IMG.last-active {
+    z-index:9;
+}
+
+</style>
+
+
+
+
+
+
+
+  <link rel="Stylesheet" type = "text/css" herf="LSR_master_css/LSR_STYLE_SHEET.css" />
+     <link rel="stylesheet" href="LSR_master_css/LSR_STYLE_SHEET.css"/>
+
+    <style type="text/css">
+        #tr1
+        {
+            width: 466px;
+        }
+        #slideshow_1
+        {
+            height: 27px;
+        }
+        .style5
+        {
+            width: 706px;
+            height: 288px;
+        }
+        </style>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+
+    <asp:ScriptManager ID="ScriptManager1" runat="server" />
+    <div id ="wrapper">
+
+    <div id = "header">
+
+         <div id="inheadright">
+            <div id="rightinside">
+            </div>
+            <div id = "leftinside">
+                <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
+            </div>
+           
+        </div>
+        <div id = "inheadleft">
+        <object width="750" height="50" type="application/x-shockwave-flash" data="LSR_Flash/mo1.swf">
+	<param value="LSR_Flash/mo1.swf" name="movie">
+	
+</object>
+        
+        </div>
+
+
+     </div>
+       
+       
+        
+        <div id = "banner">
+
+         <div id = "icon">
+            
+                <asp:Image ID="Image1" runat="server" Height="148px" 
+                    ImageUrl="~/LSR_master_img/LSR_NEW_LOGO.JPG" Width="147px" />
+            
+            </div>
+            <div id = "slideshow">
+             
+                
+               
+                <img alt="" class="style5" src="LSR_master_img/1.jpg" />
+                        <img src="LSR_master_img/2.jpg" alt="Slideshow Image 2" />
+                         <img src="LSR_master_img/3.jpg" alt="Slideshow Image 3" />
+                            <img src="LSR_master_img/4.jpg" alt="Slideshow Image 4" />
+
+                </div>
+
+
+                <div id ="lgoin">
+                 <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+                            <div style="height: 161px">
+                                &nbsp;&nbsp;<br />
+                                &nbsp;
+                                <br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <br />
+                                &nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                               
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+                            </div>
+                        </asp:ContentPlaceHolder>
+
+             </div>
+        </div>
+
+         
+
+
+        <div id = "navigation">
+
+         <ul id="nav">
+                    <li><a href="Home.aspx">HOME</a></li>
+                    <li><a href="Room_reservation2.aspx">ROOM</a></li>
+                    <li><a href="SportsManagement.aspx">SPORT</a>
+
+                            <ul>
+                            <li><a href="AddNewSportsForm.aspx">Add Sport</a></li>
+                            <li><a href="SearchSports.aspx">Search Sport</a></li>
+                            <li><a href="ViewSportsCategory.aspx">View/Book Sport</a></li>
+                            <li><a href="ViewSportsCategory.aspx">Edit/Remove Sport</a></li>                            
+                            <li><a href="ViewReports.aspx">View Reports</a> </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="Home_Tour.aspx">Travel</a>
+
+                        <ul>
+                            <li><a href="main_package_create.aspx">Create main package</a></li>
+                            <li><a href="sub_package_create.aspx">Create Sub Package</a></li>
+                            <li><a href="Edit_Packages.aspx">Edit Package</a></li>
+                           </ul>
+
+                        </li>
+
+                    <li><a href="eventHome.aspx">Events</a></li>
+                    <li><a href="">Agents</a>
+                            <ul>
+                            <li><a href="AddNewAgent1.aspx">Add Agent</a></li>
+                            <li><a href="UpdateAgent1.aspx">Update Agent</a></li>
+                            <li><a href="viewdetails(Agent)1.aspx">View Agent</a></li>
+                           </ul>
+                    
+                    </li>
+                    <li><a href="#">Manage</a>
+                        <ul>
+                            <li><a href="Add New Hotel1.aspx">Hotel</a></li>
+                            <li><a href="email_cus2.aspx">Email customer</a>
+                            <li><a href="Search_Customer2.aspx">Search customer</a>
+                                                        
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+        </div>
+
+        <div id = "content_area">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+
+    
+
+
+        <div id = "footer">
+        <p>All Right Reserve</p>
+        </div>
+    
+       
+    </div>
+  
+
+    </div>
+    </form>
+</body>
+</html>

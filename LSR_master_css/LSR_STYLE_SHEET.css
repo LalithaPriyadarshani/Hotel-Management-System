@@ -1,0 +1,414 @@
+﻿body 
+{
+	font-family:'Lucida Bright',Tahoma,Verdana,Arial,Sans-Serif;
+	background-color:White;
+	background-image:url(../LSR_master_img/body3.jpg);
+	background-repeat:repeat;
+}
+
+
+#wrapper
+{
+	width: 1080px;
+	margin:5px auto;
+	padding:10px;
+	background-color:#fff;
+	border-bottom-left-radius:10px; 
+    border-bottom-right-radius:10px;
+    border-bottom-style:groove;
+    border-bottom-width:thick;
+    border-radius:10px; 
+}
+        
+        
+#header
+{
+	
+	height:50px;
+	border:3px solid #E3E3E3;
+	border-left: 0px solid #E3E3E3;
+    border-right: 0px solid #E3E3E3;
+    border-top: 0px solid #E3E3E3;
+    border-bottom: thick inset #E3E3E3;
+	background-image:url(../LSR_master_img/bitmap.png);
+	background-repeat:no-repeat; 
+	background-size:cover;
+	width: 1080px;
+    color: #0099FF;
+    font-family: "Wingdings 3";
+    background-color:#fff; 
+    border-bottom-left-radius:10px; 
+    border-bottom-right-radius:10px;
+    border-radius:10px;
+    margin-right: 3px;
+}
+        
+  
+#inheadright
+{
+	float:right;
+	width:320px;
+	height:50px;
+    margin:0 0 0 0;
+    border:0px solid #E3E3E3;
+    background-color:none;	
+}   
+
+#rightinside
+{
+	float:right;
+	width:70px;
+	height:50px;
+    margin:0 0 0 0;
+    border:1px solid #E3E3E3;
+    background-color:none;	
+}
+
+#leftinside
+{
+	float:right;
+	width:240px;
+	height:50px;
+    margin:0 0 0 0;
+    border:1px solid #E3E3E3;
+    background-color:none;	
+
+}
+
+
+
+#inheadleft
+{
+	float:left;
+	width:750px;
+	height:50px;
+    margin:0px 0 0px 0;
+    border:1px solid #E3E3E3;
+    background-color:none;
+}
+ 
+        
+        
+#banner
+{
+	
+	height:330px;
+	border:3px solid #E3E3E3;
+	border-left: 0px solid #E3E3E3;
+    border-right: 0px solid #E3E3E3;
+    border-top: 0px solid #E3E3E3;
+    border-bottom: thick inset #E3E3E3;
+	/*background-image:url(../LSR_master_img/image1.jpg);
+	background-repeat:no-repeat;*/
+	background-size:cover;
+	width: 1080px;
+    color: Black;
+    font-family:Times New Roman;
+    background-color:#fff; 
+    border-bottom-left-radius:10px; 
+    border-bottom-right-radius:10px;
+    border-radius:10px;
+    /* margin-right: 3px;*/
+     margin:20px 0 20px 0;
+   
+}     
+
+   
+ #icon
+{
+	float:left;
+	width:150px;
+	height:150px;
+    margin:0 0 0 0;
+   
+    background-color:none;	
+}
+#slideshow
+{
+	
+	float:right;
+	width:710px;
+	height:292.5px;
+    margin:15px 50px 0 0;
+    border:5px double black;
+    background-color:none;	
+
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+    border-bottom-left-radius:10px; 
+    border-bottom-right-radius:10px;
+   /* border-bottom-style:inset;
+    border-bottom-width:thick;
+    border-radius:5px;*/
+	
+}
+
+#showin
+{
+	float:right;
+	width:720px;
+	height:275px;
+    margin:10px 10px 0 10px;
+    border:1px solid black;
+    background-color:none;	
+}  
+   
+ #lgoin
+{
+	float:left;
+	width:250px;
+	height:150px;
+    margin:10px 0 0 0;
+    border:1px solid black;
+    background-color:none;	
+}
+  
+       
+   
+#navigation	
+{
+	width: 100%; /* Spans the width of the page */
+	height: 50px; 
+	margin: 0; /* Ensures there is no space between sides of the screen and the menu */
+	z-index: 99; /* Makes sure that your menu remains on top of other page elements */
+	position: relative; 
+	background-color: #00acee;
+    top: 4px;
+    left: 3px;
+    background-color:#86c9ef; 
+    border-bottom-left-radius:10px; 
+    border-bottom-right-radius:10px;
+    border-bottom-style:hidden;
+    border-bottom-width:thick;
+    border-radius:10px;
+}
+#nav	
+{
+	height: 54px;
+    padding: 0;
+	position: absolute; /* Ensures that the menu doesn’t affect other elements */
+	border-right: 0px solid #fff;
+    top: -14px;
+    left: 3px;
+    border-bottom-left-radius:10px; 
+    border-bottom-right-radius:10px;
+    border-bottom-style:solid;
+    border-bottom-width:inherit;
+    border-radius:10px;
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+}
+#nav li 
+{
+			height: 35px;
+			width: 153px;  /* Each menu item is 150px wide */
+			float: left;  /* This lines up the menu items horizontally */
+			text-align: center;  /* All text is placed in the center of the box */
+			list-style: none;  /* Removes the default styling (bullets) for the list */
+			font: normal bold 12px/1.2em  vani;  
+			background-color: #21759b;
+            border-bottom-left-radius:10px; 
+            border-bottom-right-radius:10px;
+            border-bottom-style:initial;
+            border-bottom-width:thick;
+            border-radius:10px;
+}
+#nav a	
+{							
+		padding: 18px ;  /* Adds a padding on the top and bottom so the text appears centered vertically */
+		border-left: 1px solid #fff; /* Creates a border in a slightly lighter shade of blue than the background.  Combined with the right border, this creates a nice effect. */
+		border-right: 1px solid #fff; /* Creates a border in a slightly darker shade of blue than the background.  Combined with the left border, this creates a nice effect. */
+		text-decoration: none;  /* Removes the default hyperlink styling. */
+		color: #fff; /* Text color is white */
+		display: block;
+        border-bottom-left-radius:10px; 
+        border-bottom-right-radius:10px;
+        border-bottom-style:initial;
+        border-bottom-width:thick;
+        border-radius:10px;
+}
+ #nav li:hover, a:hover
+ {
+     background-color:#9bc4e2;
+ }
+ #nav li ul 
+ {
+		display: none;  /* Hides the drop-down menu */
+		height:auto ;									
+		margin: 0; /* Aligns drop-down box underneath the menu item */
+		padding: 0; /* Aligns drop-down box underneath the menu item */
+        border-bottom-left-radius:10px; 
+        border-bottom-right-radius:10px;
+        border-bottom-style:initial;
+        border-bottom-width:thin;
+        border-radius:10px;			
+}	    			
+
+#nav li:hover ul 	
+{
+       display: table-row; /* Displays the drop-down box when the menu item is hovered over */
+ }  
+ #nav li ul li a 
+ 	{
+		    border-left: 1px solid #fff; 
+		    border-right: 1px solid #fff; 
+		    border-top: 1px solid #74a3b7; 
+		    border-bottom: 1px solid #fff; 
+            border-bottom-left-radius:10px; 
+            border-bottom-right-radius:10px;
+            border-bottom-style:initial;
+            border-bottom-width:thick;
+            border-radius:10px;
+	}
+				
+#nav li ul li a:hover
+	{
+	    background-color: #86c9ef;
+	}
+     
+   
+       
+       
+#content_area
+{
+  
+    width:1010px;
+    margin:20px 0 20px 25px;
+    padding:10px;
+    border:1px solid #E3E3E3;
+    background-color:white; 
+    border-bottom-left-radius:10px; 
+    border-bottom-right-radius:10px;
+    border-bottom-style:inset;
+    border-bottom-width:thick;
+    border-radius:10px;
+	
+}
+
+
+
+           
+#footer
+{
+	clear:both;
+    width:auto;
+    height:60px;
+    margin-top:5px;
+  /* background-color:#0071c5; 
+  background-image:url('../LSR_master_img/bitmap1.png');
+  background-image:url('../LSR_master_img/bitmap1.png');
+  background-repeat:no-repeat; */
+  background-color:GreenYellow;
+    margin-left: 2px;
+    text-shadow:0.1em 0.1em #333;
+    text-align:center;
+    color:#fff;
+    border-bottom-left-radius:10px; 
+    border-bottom-right-radius:10px;
+    border-bottom-style:initial;
+    border-bottom-width:thick;
+    border-radius:10px;
+}
+  
+       
+#upper
+{
+	width:1009px;
+	height:50px;
+	border:2px solid black;
+}
+#form2
+{
+	width:1009px;
+	height:616px;
+	background-image :url(../room_img/1.jpg);
+	
+	
+}
+	
+
+	#me
+	{
+		width:570px;
+		height:200px;
+		margin-bottom:10px;
+		margin-top:40px;
+		margin-left:350px;
+		margin-right:50px;
+		border:2px solid black;
+	}
+		
+
+#planform
+{
+}
+
+form
+{
+	height:700px;
+}
+
+#planbefor
+{
+		width:570px;
+		height:80px;
+		margin-bottom:10px;
+		margin-top:20px;
+		margin-left:100px;
+		margin-right:50px;
+		border:2px solid black;
+}
+
+#floorselect
+{	height: 838px;
+}
+
+
+ect
+{	height: 438px;
+}
+
+
+#roomse
+{
+	margin-top:15px;
+	height:601px;
+	border:0px solid black;
+}
+
+#bedandroom
+{
+	margin-top:40px;
+	margin-left:80px;
+	width:853px;
+	height:215px;
+	border:2px solid black;
+}
+
+#afterthetable
+{
+	height:338px;
+}
+
+#roomreseunderreserve
+{
+		width:570px;	
+		height:80px;
+		margin-bottom:10px;
+		margin-top:90px;
+		margin-left:350px;
+		margin-right:50px;
+		border:3px solid black;
+}
+
+#errorlbl
+{
+	margin-top:40px;
+
+}
+
+#bunext
+{
+	margin-top:20px;
+}
